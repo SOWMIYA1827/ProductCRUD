@@ -1,0 +1,120 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* MAIN LAYOUT */
+.user-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #f4f6f9;
+}
+
+/* HEADER (ADMIN STYLE MATCH) */
+.user-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: linear-gradient(180deg, #1e293b, #0f172a);
+    color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+/* COMPANY NAME */
+.company-name {
+    font-size: 30px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+/* NAVBAR */
+.user-navbar {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* NAV LINKS (ADMIN STYLE) */
+.user-nav-link {
+    text-decoration: none;
+    color: #e2e8f0;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.user-nav-link:hover {
+    background: rgba(255,255,255,0.1);
+    color: #38bdf8;
+    transform: translateY(-2px);
+}
+
+/* SIGNOUT BUTTON */
+.signout-btn button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    background: #ef4444;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.signout-btn button:hover {
+    background: #dc2626;
+    transform: scale(1.05);
+}
+
+/* CONTENT AREA */
+.user-content {
+    padding: 25px;
+    flex: 1;
+}
+
+/* GLOBAL CARD STYLE (LIKE ADMIN) */
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* BUTTON GLOBAL STYLE */
+button {
+    background: #38bdf8;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+button:hover {
+    background: #0ea5e9;
+    transform: scale(1.05);
+}
+
+/* DANGER BUTTON */
+button.danger {
+    background: #ef4444;
+}
+
+button.danger:hover {
+    background: #dc2626;
+}

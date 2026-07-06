@@ -1,0 +1,135 @@
+/* Full Page Background */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #667eea, #9038e9, #ff6a88);
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
+}
+
+/* Background Animation */
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Center Container */
+
+.login-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Glass Effect Login Box */
+
+.login-box {
+    width: 380px;
+    padding: 40px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(18px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+    border: 1px solid rgba(255,255,255,0.3);
+    transition: 0.3s;
+}
+
+.login-box:hover {
+    transform: scale(1.03);
+}
+
+/* Title */
+
+.login-title {
+    text-align: center;
+    color: rgb(237, 18, 230);
+    font-size: 34px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+/* Form */
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+
+.login-label {
+    color: rgb(40, 43, 240);
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+/* Inputs */
+
+.login-input {
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    background: rgba(255,255,255,0.85);
+    transition: 0.3s;
+}
+
+.login-input:focus {
+    background: white;
+    box-shadow: 0 0 12px #00e5ff;
+}
+
+/* Login Button */
+
+.login-button {
+    margin-top: 25px;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg,#00c6ff,#0072ff);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.login-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,114,255,0.4);
+}
+
+/* Placeholder */
+
+.login-input::placeholder {
+    color: gray;
+}
+
+/* Responsive */
+
+@media(max-width:500px){
+
+    .login-box{
+        width:90%;
+        padding:25px;
+    }
+
+    .login-title{
+        font-size:28px;
+    }
+
+}

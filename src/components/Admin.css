@@ -1,0 +1,124 @@
+/* Main layout */
+.admin-container {
+  display: flex;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f9;
+}
+
+/* Sidebar menu */
+.admin-menu {
+  width: 250px;
+  background: linear-gradient(180deg, #1e293b, #0f172a);
+  color: white;
+  list-style: none;
+  padding: 20px 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Menu items */
+.admin-menu li {
+  padding: 12px 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Links */
+.admin-menu li a {
+  text-decoration: none;
+  color: #e2e8f0;
+  font-size: 16px;
+  display: block;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.admin-menu li:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-left: 4px solid #38bdf8;
+}
+
+.admin-menu li a:hover {
+  color: #38bdf8;
+}
+
+/* Active/selected feel (optional if you use NavLink later) */
+.admin-menu li.active {
+  background: rgba(56, 189, 248, 0.15);
+  border-left: 4px solid #38bdf8;
+}
+
+/* Logout section */
+.logout-item {
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Content area */
+.admin-content {
+  flex: 1;
+  padding: 25px;
+  overflow-y: auto;
+  background: #f9fafb;
+}
+
+/* Card style (use in ProductDetails/AddProduct components) */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+/* Buttons (use globally in child components) */
+button {
+  background: #38bdf8;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+button:hover {
+  background: #0ea5e9;
+  transform: scale(1.05);
+}
+
+/* Danger button (delete) */
+button.danger {
+  background: #ef4444;
+}
+
+button.danger:hover {
+  background: #dc2626;
+}
+
+/* Form styling (AddProduct) */
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 5px rgba(56, 189, 248, 0.4);
+}
